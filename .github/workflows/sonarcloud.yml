@@ -28,7 +28,9 @@
 
 name: SonarCloud analysis
 
-on:
+on:- name: First interaction
+  uses: actions/first-interaction@v1.1.1
+
   push:
     branches: [ "master" ]
   pull_request:
